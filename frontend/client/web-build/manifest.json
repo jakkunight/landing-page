@@ -1,9 +1,9 @@
 {
-  "background_color": "#ffffff",
+  "background_color": "#000000",
   "display": "standalone",
   "lang": "en",
-  "name": "client",
-  "short_name": "client",
+  "name": "Jakku Night",
+  "short_name": "Jakku Night",
   "start_url": "/?utm_source=web_app_manifest",
   "orientation": "portrait",
   "icons": [
