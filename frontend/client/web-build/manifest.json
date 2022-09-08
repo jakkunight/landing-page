@@ -5,7 +5,6 @@
   "name": "Jakku Night",
   "short_name": "Jakku Night",
   "start_url": "/?utm_source=web_app_manifest",
-  "orientation": "portrait",
   "icons": [
     {
       "src": "/landing-page/pwa/chrome-icon/chrome-icon-144.png",
