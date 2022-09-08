@@ -3,6 +3,8 @@ import { useWindowDimensions } from "react-native";
 import { Box, VStack, ScrollView, Heading } from "native-base";
 
 const Test = ({ navigation }) => {
+	const { height, width } = useWindowDimensions();
+	const { navigate } = navigation;
 	return (
 		<Box w={"100%"} h={"100%"} size={"100%"} bgColor={"black"} >
 			{

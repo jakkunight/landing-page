@@ -13,10 +13,12 @@ const App = () => {
 	return (
 		<NativeBaseProvider>
 			<NavigationContainer>
-				<Stack>
+				<Stack.Navigator screenOptions={{
+					headerShown: false
+				}} >
 					<Stack.Screen name={"Home"} component={Home} />
-					<Stack.Screen name={"Test"} component={Test} >
-				<Stack>
+					<Stack.Screen name={"Test"} component={Test} />
+				</Stack.Navigator>
 			</NavigationContainer>
 		</NativeBaseProvider>
 	);
