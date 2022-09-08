@@ -1,8 +1,8 @@
 import React, {  } from "react";
 import { useWindowDimensions } from "react-native";
-import { Box, VStack, ScrollView , Heading} from "native-base";
+import { Box, VStack, ScrollView, Heading } from "native-base";
 
-const Home = ({ navigation }) => {
+const Test = ({ navigation }) => {
 	return (
 		<Box w={"100%"} h={"100%"} size={"100%"} bgColor={"black"} >
 			{
@@ -14,7 +14,7 @@ const Home = ({ navigation }) => {
 						// Here goes the remainder components:
 					}
 					<Heading color={"primary.200"} >
-						{"Landing Page"}
+						{"Test Page"}
 					</Heading>
 				</VStack>
 			</ScrollView>
@@ -22,4 +22,4 @@ const Home = ({ navigation }) => {
 	);
 };
 
-export default Home;
+export default Test;
