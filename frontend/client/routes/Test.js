@@ -1,16 +1,26 @@
 import React, {  } from "react";
 import { useWindowDimensions } from "react-native";
-import { Box, VStack, ScrollView, Heading, Text, Button } from "native-base";
+import { Box, VStack, ScrollView, Heading, Text, Button, HStack } from "native-base";
+import Index from "../components/Index.js";
+
+const fakeData = [
+	"Introduction",
+	"Topic 1",
+	"Topic 2",
+	"Topic 3",
+	"Conclusion"
+];
 
 const Test = ({ navigation }) => {
 	const { height, width } = useWindowDimensions();
 	const { navigate } = navigation;
 	return (
-		<Box w={"100%"} h={"100%"} size={"100%"} bgColor={"black"} >
+		<HStack w={"100%"} h={"100%"} size={"100%"} bgColor={"black"} >
 			{
 				// Here goes the "StickyMenu":
 			}
-			<ScrollView h={height} pos={"fixed"} top={0} left={0} >
+			<Index itemList={ fakeData } />
+			<ScrollView h={height} pos={"fixed"} top={0} w={"100%"} >
 				<VStack>
 					{
 						// Here goes the remainder components:
@@ -25,7 +35,7 @@ const Test = ({ navigation }) => {
 					</Button>
 				</VStack>
 			</ScrollView>
-		</Box>
+		</HStack>
 	);
 };
 
