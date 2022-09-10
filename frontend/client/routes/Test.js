@@ -1,6 +1,6 @@
 import React, {  } from "react";
 import { useWindowDimensions } from "react-native";
-import { Box, VStack, ScrollView, Heading } from "native-base";
+import { Box, VStack, ScrollView, Heading, Text, Button } from "native-base";
 
 const Test = ({ navigation }) => {
 	const { height, width } = useWindowDimensions();
@@ -18,6 +18,11 @@ const Test = ({ navigation }) => {
 					<Heading color={"primary.200"} >
 						{"Test Page"}
 					</Heading>
+					<Button onPress={() => { navigate("Home") }} >
+						<Text>
+							{"Home"}
+						</Text>
+					</Button>
 				</VStack>
 			</ScrollView>
 		</Box>
