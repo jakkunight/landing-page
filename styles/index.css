@@ -1,0 +1,57 @@
+body{
+	background-color: black;
+	color: #CCCCCC;
+	font-family: "Currier New", "Lucida Console", monospace;
+	display: flex;
+	flex-flow: column;
+}
+a{
+	color: #CCCCCC;
+	text-decoration: none;
+}
+#banner{
+	background-image: url("../img/python-logo.png");
+	background-repeat: repeat;
+	background-size: contain;
+	background-color: black;
+	width: 100%;
+	height: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+h1{
+	color: white;
+	font-size: 50pt;
+}
+.blur-wraper{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-content: center;
+	justify-content: center;
+	backdrop-filter: blur(10px);
+}
+#info{
+	padding: 2%;
+}
+p{
+	font-size: 25pt;
+	margin-top: 5%;
+	margin-bootom: 20%;
+	align-self: center;
+	border-color: #CCCCCC;
+	border-style: double;
+	border-weight: 2%;
+	padding: 2%;
+	text-align: center;
+}
+#contact{
+	display: flex;
+	flex-flow: column;
+	margin: 2%;
+	padding: 2%;
+	border-weight: 2%;
+	border-style: dashed;
+	border-color: #CCCCCC;
+}
